@@ -1,0 +1,66 @@
+<%- include('plantillas/head.ejs',{tituloPagina:'Formulario'}) %>
+<%- include('plantillas/cabeceraGeneral.ejs') %>
+<body>
+   <div class="contenedor">
+    <div class="formulario">
+        <h1>FORMULARIO</h1>
+        <br>
+        <p>Por favor completa el formulario para que podamos enviarte más información con respecto al curso.</p>
+        <br>
+         <form class="formulario" action="/formulario" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend><br>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" size="40" required><br><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" size="40" required><br><br>            
+                <label for="mail">Mail de contacto:</label>
+                <input type="email" id="mail" name="mail" size="40" required><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Cursada :</legend><br>
+                <p>¿Como te gustaría que fuera la modalidad del curso?</p>
+                <input type="radio" id="presencial" name="modalidad" value="presencial">
+                <label for="presencial">Presencial</label><br>
+                <input type="radio" id="remoto" name="modalidad" value="remoto">
+                <label for="remoto">Remoto</label><br>   
+                <p>¿Qué momento del año te conviene más para realizar el curso?</p>
+                <input type="radio" id="primer-semestre" name="fecha" value="primer-semestre">
+                <label for="primer-semestre">Primer Semestre</label><br>
+                <input type="radio" id="segundo-semestre" name="fecha" value="segundo-semestre">
+                <label for="segundo-semestre">Segundo Semestre</label><br>                    
+            </fieldset>
+            <fieldset>
+                <legend>Tecnologías :</legend><br>
+                <p>¿Qué tecnologías te interesaron más?</p>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1"> HTML </label><br>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2"> CSS</label><br>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+                <label for="tecnologia3"> Javascript</label><br>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="React">
+                <label for="tecnologia4"> React</label><br>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="Node">
+                <label for="tecnologia5"> NodeJS</label><br>
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Express">
+                <label for="tecnologia6"> Express</label><br>
+                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Mongo">
+                <label for="tecnologia7"> MongoDB</label><br>
+                <input type="checkbox" id="tecnologia8" name="tecnologia8" value="EJS">
+                <label for="tecnologia8"> EJS y motores de plantillas</label><br>                
+            </fieldset>
+            <fieldset><br>
+                <legend>Comentarios</legend>
+                <p>¿Quieres agregar algo?Puedes hacerlo aquí abajo</p>
+                <textarea name="comentarios" rows="10" cols="60">                
+                </textarea>
+            </fieldset>            
+            <input class="enviar" type="submit" value="Enviar Formulario">
+            <input class="resetear" type="reset">
+         </form>      
+    </div>
+   </div>    
+    <%- include('plantillas/footer.ejs',{tituloPagina:'Formulario'}) %>
+</body>
+</html>

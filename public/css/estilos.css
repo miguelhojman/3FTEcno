@@ -1,0 +1,122 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.tabla{
+    width: 90%;
+    border:1px solid black;
+    font-size: 1.5rem;
+    margin:1.5rem auto;
+}
+.tabla th{
+    width: 50%;
+    border:1px solid black;
+    text-align: center;
+}
+.tabla td{
+    border:1px solid black;
+    text-align: center;
+}
+.elem-tabla:hover{
+    background-color: rgb(133, 138, 133);
+    font-style: italic;
+}
+p{
+    font-size: 1.5rem;
+}
+.cabecera{
+    height: 15%;
+    background-color: rgb(213, 248, 131);
+    padding-left: 20px;
+}    
+.cabecera h1{
+    text-align: center;
+    padding-top:10px;
+}
+.cabecera p{
+    font-size: 1.3rem;
+    font-weight: 400;    
+}
+.cabecera nav{
+    font-size: 1.1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 15px;
+}
+.contenedor{
+    min-height: 400px;
+    background-color: rgb(163, 167, 163);
+    padding-left: 20px;
+}
+.inicio{
+    margin-left: 30px;
+}
+.inicio p{
+    padding: 8px;
+    font-size: 1.5rem;
+}
+.imagenes{
+    float: left;
+    margin-right: 2%;
+}
+.navegacion ul li{
+    list-style-type:none;
+    text-align: center;
+    font-size: 2.6rem;
+    text-decoration: none;
+}
+.navegacion ul li a{
+    text-decoration: none;
+}
+.navegacion-principal ul li{
+    list-style-type:none;
+}
+.formulario{
+    font-size: 1.3rem;
+    padding-left: 1.5rem;
+}
+.enviar, .resetear{
+    width: 12rem;
+    height: 4rem;
+    margin: 2rem;
+    font-size:1rem ;
+    background-color:green;
+    color: white;
+    border: solid 3px rgb(15, 3, 122);
+    border-radius: 5px;
+    box-shadow: grey 0.2rem 0.2rem;
+    transition: background-color 1s;
+}
+.enviar:hover, .resetear:hover{
+    background-color: rgb(10, 32, 10);
+}
+.formularioCompletado h1{
+    text-align: center;
+    padding-top: 10rem;
+    word-spacing: 0.9rem;
+    text-decoration: underline;
+}
+footer {
+    background-color: rgb(213, 248, 131); 
+    height: 130px;  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem; 
+}
+footer p{
+    height: 15%;
+    padding-top:25px;
+}
+footer img{
+    float: left;
+
+}
+
+/*Acá va la parte de RWD.En las páginas la imágen se centra y el texto pasa abajo*/
+@media screen and (max-width:600px) {
+   
+    .imagenes{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

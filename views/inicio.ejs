@@ -1,0 +1,37 @@
+<%- include('plantillas/head.ejs',{tituloPagina:'Página de inicio'}) %>
+<%- include('plantillas/cabeceraGeneral.ejs') %>
+<link rel="stylesheet" href=".css">
+<body>  
+<div class="contenedor">
+<div class="inicio">
+    <p>Vamos a hacer un recorrido por algunas de las tecnologías que vimos a lo largo del curso. <br>
+        Del lado del cliente, o sea en el <strong>NAVEGADOR</strong>  tenemos las tecnologías del Front End y del lado del <strong>SERVIDOR</strong> tenemos las tecnologías del Back End. <br>
+        Veamos en la siguiente tabla cuáles son algunas de  éstas tecnologías :</p>
+    <table class="tabla">
+        <tr>
+          <th>FRONT END</th>
+          <th>BACK END</th>
+        </tr>
+        <tr>
+            <td class="elem-tabla"><a href="/html">HTML</a></td>
+            <td class="elem-tabla"><a href="/node">Node JS</a></td>       
+        </tr>
+        <tr>
+            <td class="elem-tabla"><a href="/css">CSS</a></td>
+            <td class="elem-tabla"><a href="/express">Express JS</a></td>      
+        </tr>
+        <tr>
+            <td class="elem-tabla"><a href="/javascript">JavaScript</a></td>
+            <td class="elem-tabla"><a href="/mongo">MongoDB</a></td>      
+        </tr>
+        <tr>
+            <td class="elem-tabla"><a href="/react">React</a></td>
+            <td class="elem-tabla"><a href="/motorPlantillas">EJS-Motor de plantillas</a></td>      
+        </tr>    
+      </table>  
+    <p>Si luego de ver las distintas tecnologías te interesó el tema puedes hacer clic en este <strong><a href="/informacion">enlace</a></strong> para obtener más información</p> 
+</div>
+</div>
+<%- include('plantillas/footer.ejs',{tituloPagina:'Página de inicio'}) %>
+</body>
+</html>
